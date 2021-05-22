@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-form-field class="example-full-width">
+    <mat-label>User Name</mat-label>
+    <br />
+    <input matInput placeholder="Enter User Name" [(ngModel)]="txtUserName" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <br />
+    <input matInput type="password" placeholder="Enter Password" [(ngModel)]="txtPassword" />
+  </mat-form-field>
+  <br/>
+  <button mat-raised-button color="primary" (click)="verifyUser()">Submit</button>
+</mat-card>
