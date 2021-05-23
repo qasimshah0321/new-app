@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  public storedPost: any = [];
+
+  constructor() {
+
+  }
+
+  CatchEmittedEvent(post: any){
+    this.storedPost.push(post);
+  }
 }

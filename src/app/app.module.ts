@@ -11,13 +11,19 @@ import { MatCardModule } from '@angular/material/card';
 import { LoginComponent } from './login/login.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { LoginSuccessComponent } from './login-success/login-success.component';
-
+import { PostListComponent } from './post-list/post-list.component';
+import { PostComponent } from './post/post.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { MatSelectModule } from '@angular/material/select';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     NewcomponentComponent,
     LoginComponent,
-    LoginSuccessComponent
+    LoginSuccessComponent,
+    PostListComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +33,10 @@ import { LoginSuccessComponent } from './login-success/login-success.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatExpansionModule,
+    MatSelectModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
