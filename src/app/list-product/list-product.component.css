@@ -1,0 +1,10 @@
+mat-card{
+  margin:auto;
+  width: 40%;
+}
+.truncate {
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

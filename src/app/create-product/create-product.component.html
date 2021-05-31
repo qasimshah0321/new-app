@@ -1,0 +1,70 @@
+
+<section>
+
+  <mat-card>
+    <h1>Create Post</h1>
+    <mat-form-field class="example-full-width">
+      <mat-label>Product Name</mat-label>
+      <input
+        matInput
+        placeholder="Enter Product Name"
+        [(ngModel)]="ProductName"
+      />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width">
+      <mat-label>Product Catagory</mat-label>
+      <input
+        matInput
+        placeholder="Enter Product Catagory"
+        [(ngModel)]="ProductCatagory"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Product Brand</mat-label>
+      <input
+        matInput
+        placeholder="Enter Product Brand"
+        [(ngModel)]="ProductBrand"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Product Color</mat-label>
+      <input
+        matInput
+        placeholder="Enter Product Color"
+        [(ngModel)]="ProductColor"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Product Price</mat-label>
+      <input
+        matInput
+        placeholder="Enter Product Price"
+        [(ngModel)]="ProductPrice"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Product Lenght</mat-label>
+      <input
+        matInput
+        placeholder="Enter Product Lenght"
+        [(ngModel)]="ProductLength"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Product Waist</mat-label>
+      <input
+        matInput
+        placeholder="Enter Product Waist"
+        [(ngModel)]="ProductWaist"
+      />
+    </mat-form-field>
+    <br />
+    <button mat-raised-button color="warn"
+    (click)="ProductFormData()">Create</button>
+    <br />
+    <br />
+  </mat-card>
+</section>
+<br />

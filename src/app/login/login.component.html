@@ -1,14 +1,33 @@
+<h1>Users Sign In</h1>
 <mat-card>
-  <mat-form-field class="example-full-width">
-    <mat-label>User Name</mat-label>
-    <br />
-    <input matInput placeholder="Enter User Name" [(ngModel)]="txtUserName" />
-  </mat-form-field>
-  <mat-form-field class="example-full-width">
-    <mat-label>Password</mat-label>
-    <br />
-    <input matInput type="password" placeholder="Enter Password" [(ngModel)]="txtPassword" />
-  </mat-form-field>
-  <br/>
-  <button mat-raised-button color="primary" (click)="verifyUser()">Submit</button>
+  <p>
+    {{ Message }}
+  </p>
+  <p>
+    <mat-form-field class="full-width">
+      <mat-label>Login</mat-label>
+      <input
+        type="text"
+        placeholder="Please enter your email address"
+        matInput
+        [(ngModel)]="Login"
+      />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="full-width">
+      <mat-label>Password</mat-label>
+      <input
+        type="password"
+        placeholder="Please enter your password"
+        matInput
+        [(ngModel)]="Password"
+      />
+    </mat-form-field>
+  </p>
+  <p>
+    <button mat-raised-button color="primary" (click)="Authenticate()">
+      Sign in
+    </button>
+  </p>
 </mat-card>
